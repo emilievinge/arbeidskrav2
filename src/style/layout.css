@@ -1,0 +1,35 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    background-color: #fff;
+    color: #000;
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        margin: 0.5rem;
+    }
+    input {
+        margin: 0.5rem;
+        background-color: #fff;
+        color: #737373;
+        border: #b2b2b2 solid 1px;
+        border-radius: 5px;
+    }
+    button {
+        margin: 1rem;
+    }
+    ul{
+        list-style-type: none;
+    }
+}
