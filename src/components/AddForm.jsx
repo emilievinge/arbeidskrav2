@@ -1,4 +1,5 @@
 import { useState } from "react"
+import ShoppingItem from "./ShoppingItem"
 
 export default function AddForm({form, setForm, setShoppinglist}) {
     const handleChange = (e) => {

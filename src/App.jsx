@@ -6,7 +6,20 @@ import './style/layout.css'
 
 function App() {
 
+  const defaultItems = [
+    {
+      id: 0,
+      name: "Capri Sun",
+      quantity: 4
+    },
+    {
+      id: 1,
+      name: "Fanta",
+      quantity: 2
+    }
+  ]
 
+  const useState = {defaultItems}
 
   return (
     <>
@@ -14,7 +27,7 @@ function App() {
       <main>
         <AddForm />
         <ShoppingList />
-        <ShoppingItem />
+        <ShoppingItem  />
       </main>
     </>
   )

@@ -9,13 +9,13 @@ export default function ShoppingItem({id, setShoppingItem}){
       <>
         <li>
           <input id="checkbox" type="checkbox" defaultChecked />
-          <label htmlFor="checkbox">Melk</label>
-          <input type="number" min="1" max="99" placeholder="1" />
+          <label htmlFor="checkbox">Capri Sun</label>
+            <input type="number" min="1" max="99" placeholder="1" />
         </li>
         <li>
           <input id="checkbox" type="checkbox" />
           <label htmlFor="checkbox">Egg</label>
-          <input type="number" min="1" max="99" placeholder="1" />
+            <input type="number" min="1" max="99" placeholder="1" />
         </li>
       </>
     )
