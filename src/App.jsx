@@ -4,6 +4,8 @@ import ShoppingList from "./components/ShoppingList"
 import ShoppingItem from "./components/ShoppingItem"
 import './style/layout.css'
 
+// Er klar over at oppgaven mangler punkter, men vi har flere arbeidskrav som krevde det vi hadde.
+
 function App() {
 
   const defaultItems = [
