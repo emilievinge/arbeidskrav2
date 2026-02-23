@@ -21,6 +21,7 @@ function App() {
     }
   ]
 
+  const [] = useState(defaultItems)
   const useState = {defaultItems}
 
   return (
