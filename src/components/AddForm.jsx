@@ -1,19 +1,19 @@
 import { useState } from "react"
 import ShoppingItem from "./ShoppingItem"
 
-export default function AddForm({form, setForm, setShoppinglist}) {
+export default function AddForm({items, setItems, setShoppinglist}) {
     const handleChange = (e) => {
 
       const { name, value } = e.target
-      setForm((prev) => ({...prev, [name]: value})
+      setItems((prev) => ({...prev, [name]: value})
       )
     }
 
     const handleClick = (e)=>{
       e.preventDefault()
       const uniqId = crypto.randomUUID()
-      setShoppinglist((prev) => ([...prev, {id:uniqId,...form}]))
-      console.log(form)
+      setShoppinglist((prev) => ([...prev, {id:uniqId,...items}]))
+      console.log(items)
     }
 
     return (

@@ -21,16 +21,16 @@ function App() {
     }
   ]
 
-  const [] = useState(defaultItems)
-  const useState = {defaultItems}
+  const [shoppingList, setShoppinglist] = useState(defaultItems)
+  const [items, setItems] = useState()
 
   return (
     <>
       <h1>Handleliste</h1>
       <main>
-        <AddForm />
-        <ShoppingList />
-        <ShoppingItem  />
+        <AddForm items={items} setItems={setItems} setShoppinglist={setShoppinglist} />
+        <ShoppingList shoppingListItems={shoppingList} setShoppinglist={setShoppinglist} />
+       
       </main>
     </>
   )

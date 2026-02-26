@@ -1,6 +1,4 @@
-
-
-export default function ShoppingItem({id, setShoppingItem}){
+export default function ShoppingItem({id, name, quantity, setShoppingItem}){
     const handleClick = ()=>{
         setShoppingItem((prev) => prev.filter(item => item.id !== id))
         console.log(id)
@@ -9,12 +7,7 @@ export default function ShoppingItem({id, setShoppingItem}){
       <>
         <li>
           <input id="checkbox" type="checkbox" defaultChecked />
-          <label htmlFor="checkbox">Capri Sun</label>
-            <input type="number" min="1" max="99" placeholder="1" />
-        </li>
-        <li>
-          <input id="checkbox" type="checkbox" />
-          <label htmlFor="checkbox">Egg</label>
+          <label htmlFor="checkbox">{name}</label>
             <input type="number" min="1" max="99" placeholder="1" />
         </li>
       </>
